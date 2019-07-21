@@ -1,0 +1,12 @@
+# Formatting width and line ending settings
+column_width = 120    # Maximum line width before wrapping.
+line_endings = "Unix" # Use Unix-style line endings (LF).
+
+# Indentation settings
+indent_type = "Spaces" # Indent using spaces instead of tabs.
+indent_width = 2       # Number of spaces per indentation level.
+
+# Style preferences for quotes, parentheses, and statement formatting
+quote_style = "AutoPreferDouble"      # Prefer double quotes for strings unless single quotes are required.
+call_parentheses = "Always"           # Always include parentheses in function calls, even if no arguments.
+collapse_simple_statement = "Always"  # Collapse simple statements onto one line when possible.
