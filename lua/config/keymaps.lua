@@ -8,3 +8,7 @@ keymap.set("n", "<C-l>", "<C-w>l", { silent = true, desc = "Move to right window
 
 -- Clear highlights
 keymap.set("n", "<Esc>", "<cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear highlights." })
+
+-- Toggle comments
+keymap.set("n", "<leader>/", "gcc", { desc = "Toggle Comment", remap = true })
+keymap.set("v", "<leader>/", "gc", { desc = "Toggle comment", remap = true })
