@@ -20,6 +20,7 @@ return {
       local keymap = vim.keymap
       local api = require("telescope.builtin")
       keymap.set("n", "<leader>ff", api.find_files, { silent = true, desc = "Find files." })
+      keymap.set("n", "<leader>fs", api.grep_string, { silent = true, desc = "Find selected text (grep)." })
     end,
   },
 }
