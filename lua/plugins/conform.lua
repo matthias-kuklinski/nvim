@@ -7,6 +7,7 @@ return {
     -- NOTE: `:help conform-formatters` lists available formatters.
     formatters_by_ft = {
       lua = { "stylua" },
+      nix = { "nixfmt" },
     },
 
     format_on_save = {
