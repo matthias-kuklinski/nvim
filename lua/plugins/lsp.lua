@@ -52,6 +52,13 @@ return {
         -- },
         -- },
       })
+
+      lspconfig.bashls.setup({
+        capabilities = capabilities,
+        cmd = { "bash-language-server", "start" },
+        filetypes = {
+          "sh",
+        },
       })
 
       lspconfig.yamlls.setup({
