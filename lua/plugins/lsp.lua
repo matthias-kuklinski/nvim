@@ -38,20 +38,20 @@ return {
         },
       })
 
-      -- Setup nil language server (picked up automatically from PATH)
       lspconfig.nil_ls.setup({
         capabilities = capabilities,
         cmd = { "nil" },
         filetypes = { "nix" },
         -- TODO: review settings.
-        settings = {}
-          -- ["nil"] = {
-          --   formatting = {
-          --     -- Can be triggered via `:lua vim.lsp.buf.format()`
-          --     -- command = { "nixfmt" }
-          --   },
-          -- },
+        settings = {},
+        -- ["nil"] = {
+        --   formatting = {
+        --     -- Can be triggered via `:lua vim.lsp.buf.format()`
+        --     -- command = { "nixfmt" }
+        --   },
         -- },
+        -- },
+      })
       })
 
       lspconfig.yamlls.setup({
